@@ -31,7 +31,7 @@ public class ExplicitWaitDemo {
         WebElement BtnClick = driver.findElement(By.xpath("//button[@id='j_idt87:j_idt89']"));
         BtnClick.click();
 
-        WebElement newbtn = webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id='j_idt87:j_idt90']/span/")));
+        WebElement newbtn = webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id='j_idt87:j_idt90']/span")));
         String amHere = newbtn.getText();
         System.out.println("New button text is: "+amHere);
 
